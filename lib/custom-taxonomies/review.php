@@ -1,8 +1,8 @@
 <?php
 
-add_action('init', 'registerTaxonomyNews');
+add_action('init', 'registerTaxonomyReview');
 
-function registerTaxonomyNews(): void
+function registerTaxonomyReview(): void
 {
     $args = [
         'labels' => [
@@ -28,5 +28,5 @@ function registerTaxonomyNews(): void
     ];
 
 
-    \register_taxonomy('newsCategory', ['news'], $args);
+    \register_taxonomy('newsCategory', ['review'], $args);
 }

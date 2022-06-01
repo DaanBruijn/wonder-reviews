@@ -1,7 +1,4 @@
 <?php
-/*
- * Template Name: overzichtspagina
- */
 
 $title = ("Wonder Reviews");
 $content = get_the_content();

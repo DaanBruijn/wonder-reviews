@@ -1,7 +1,5 @@
 <?php
 
-/** config for home template **/
-
 $title = ("Wonder Reviews");
 $content = get_the_content();
 
@@ -9,6 +7,8 @@ render('views/templates/custom.php', compact('title', 'content'));
 
 $arguments = ['post_type' => 'news', 'numberposts' => 2, 'category' => 0, 'orderby' => 'date', 'order' => 'DESC'];
 $ListofReviews = get_posts();
+
+$archive = get_post_type_archive_link('review');
 
 ?>
 
@@ -25,8 +25,8 @@ $ListofReviews = get_posts();
 
     <ul>
         <li><a class="active" href="#home">Home</a></li>
-        <li><a href="http://wonder-reviews.local/overzichtspagina/">Overzichpagina</a></li>
-        <!-- <li><a href="#about">About</a></li> -->
+        <li><a href="<?php echo $archive; ?>">Overzichtspagina</a></li>
+        <li><a href="#about">About</a></li>
     </ul>
     <br>
 

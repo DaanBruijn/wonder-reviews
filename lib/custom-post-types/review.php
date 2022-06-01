@@ -1,17 +1,17 @@
 <?php
 
-add_action('init', 'newsPostType');
+add_action('init', 'reviewPostType');
 
-function newsPostType()
+function reviewPostType()
 {
     $args = [
         'labels' => [
-            'name' => 'Nieuws',
-            'singular_name' => 'Nieuws',
-            'all_items' => 'Al het nieuws',
-            'edit_item' => 'Nieuws bewerken',
-            'add_new' => 'Nieuws aanmaken',
-            'add_new_item' => 'Nieuws toevoegen',
+            'name' => 'Reviews',
+            'singular_name' => 'Review',
+            'all_items' => 'Alle Reviews',
+            'edit_item' => 'Review bewerken',
+            'add_new' => 'Review aanmaken',
+            'add_new_item' => 'Review toevoegen',
         ],
         'publicly_queryable' => true,
         'exclude_from_search' => false,
@@ -27,11 +27,11 @@ function newsPostType()
             'editor',
         ],
         'rewrite' => [
-            'slug' => 'nieuws',
+            'slug' => 'reviews',
         ],
     ];
 
-    \register_post_type('news', $args);
+    \register_post_type('review', $args);
 
 }
 

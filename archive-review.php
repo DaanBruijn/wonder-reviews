@@ -3,7 +3,11 @@
 $title = ("Wonder Reviews");
 $content = get_the_content();
 
-render('views/templates/custom.php', compact('title', 'content'));
+
+$arguments = ['post_type' => 'news', 'numberposts' => 5, 'category' => 0, 'orderby' => 'date', 'order' => 'DESC'];
+$newsItemCollection = get_posts($arguments);
+
+
 
 ?>
 
@@ -71,7 +75,7 @@ render('views/templates/custom.php', compact('title', 'content'));
       </div>
 
       <div class="card">
-        <a href="#">
+        <a href="http://wonder-reviews.local/reviews/duinrell/">
           <img class="photo1" src="http://wonder-reviews.local/wp-content/uploads/2022/05/duzicegif-1650.gif" alt="gif">
           <h4>Duinrell Amusement Park</h4>
           <h5>Het vakantiepark en alle faciliteiten liggen midden in de prachtige natuur van Nationaal Park Hollandse Duinen. Duinrell biedt het hele jaar door familieplezier. Geniet van attracties en het Tikibad. In de omgeving vind je duin, strand en bos en kun je heerlijk shoppen.</h5>
@@ -79,7 +83,7 @@ render('views/templates/custom.php', compact('title', 'content'));
       </div>
 
       <div class="card">
-        <a href="#">
+        <a href="http://wonder-reviews.local/reviews/walibi/">
           <img class="photo1" src="http://wonder-reviews.local/wp-content/uploads/2022/05/ddrollercoaster.gif" alt="">
           <h3>Walibi Holland</h3>
           <h5>Walibi Holland is niet zomaar een pretpark, het is het spectaculairste attractiepark van Nederland! Een dagje uit naar Walibi is HARDGAAN, maar biedt veel meer dan alleen maar achtbanen. Het park staat namelijk boordevol spectaculaire attracties die het tot de perfecte dag uit maken voor jong en oud.</h5>

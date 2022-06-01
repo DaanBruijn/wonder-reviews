@@ -28,5 +28,5 @@ function registerTaxonomyReview(): void
     ];
 
 
-    \register_taxonomy('newsCategory', ['review'], $args);
+    register_taxonomy('newsCategory', ['review'], $args);
 }

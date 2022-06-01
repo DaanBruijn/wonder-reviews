@@ -28,7 +28,7 @@ $reviews = get_posts($arguments);
             
             <div class="hizmetkutu">
                 <div class="kutu">
-                    <img class="kayanfoto" src="<?php echo $img['url']; ?>" alt="">
+                    <img class="homepage-image" src="<?php echo $img['url']; ?>" alt="">
                     <p><?php echo $title; ?></p>
                     <p><?php echo $score; ?></p>
                     <p><?php echo $location; ?></p>

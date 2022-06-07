@@ -30,7 +30,7 @@ $reviews = get_posts($arguments);
                 <div class="kutu">
                     <img class="homepage-image" src="<?php echo $img['url']; ?>" alt="">
                     <p><?php echo $title; ?></p>
-                    <p><?php echo $score; ?></p>
+                    <p>Score: <?php echo $score; ?>/5</p>
                     <p><?php echo $location; ?></p>
                     <a href="<?php echo get_permalink($review); ?>">Lees meer</a>
                 </div>

@@ -76,9 +76,7 @@ li a.active {
 
 /* navbar end*/
 
-.anafoto {
-  width: 100%;
-}
+
 
 .anatext {
   position: absolute;
@@ -94,9 +92,6 @@ li a.active {
   font-size: xx-large;
 }
 
-.marquee {
-  animation-iteration-count: infinite;
-}
 
 .hizmetkutu {
   width: 22%;
@@ -152,3 +147,57 @@ li a.active {
 
 /* End Single */
 
+
+/* hier over ons pagina  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.cardd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: rgb(255, 178, 219);
+}
+
+.cardd:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: rgb(181, 253, 255);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4e3cb;
+  color: rgb(138, 138, 235)
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+/* end over ons pagina  */

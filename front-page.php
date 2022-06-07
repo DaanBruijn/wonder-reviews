@@ -11,7 +11,6 @@ $reviews = get_posts($arguments);
 // $archive = get_post_type_archive_link('review');
 
 ?>
-
 <h1 class="text">Recente Reviews</h1>
 
 <div class="row">

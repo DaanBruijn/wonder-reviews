@@ -23,7 +23,7 @@ footer {
   color: rgb(0, 0, 0);
   text-align: center;
   float: left;
-  margin-top: 1rem;
+  margin-top: 3.3rem;
 }
 
 /* TEMPLATE STYLING */
@@ -116,33 +116,26 @@ li a.active {
 }
 
 
-/* Start Archive */
-
-
-/* .navLogo {
-  display: flex;
-  align-content: center;
-  width: 16rem;
-  height: auto;
-} */
-
-
-/* End Archive */
-
-
 /* Start Single */
+
+.singleDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.2rem;
+  width: 100%;
+}
 
 .singlePhoto {
   display: flex;
-  
-  width: 40rem;
-  height: auto;
+  margin-right: 0.3rem;
+  width: 800px;
+  height: 471.88px;
 }
 
-.singleText {
+/* .singleText {
   display: flex;
   flex-direction: column;
-}
+} */
 
 
 /* End Single */

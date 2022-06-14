@@ -16,8 +16,12 @@ $location = get_field('location', $id);
     <img class="singlePhoto" src="<?php echo $img['url']; ?>" alt="">
     <div class="singleText">
         <p><?php echo $title?></p>
+        <hr>
         <p> <?php echo $review?></p>
-        <p>Score: <?php echo $score?>/5</p>
+        <hr>
         <p>Locatie: <?php echo $location?></p>
+        <div>
+            <p>Score: <?php echo $score?>/5</p>
+        </div>
     </div> 
 </div>

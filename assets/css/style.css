@@ -92,6 +92,10 @@ li a.active {
   font-size: xx-large;
 }
 
+.center {
+  text-align: center;
+}
+
 
 .hizmetkutu {
   width: 22%;
@@ -132,10 +136,16 @@ li a.active {
   height: 471.88px;
 }
 
-/* .singleText {
+.singleText {
+  margin-left: 0.7rem;
+  border-style: solid;
+  border-width: 1px;
+  max-width: 20rem;
+} 
+
+.singleScore {
   display: flex;
-  flex-direction: column;
-} */
+}
 
 
 /* End Single */

@@ -11,8 +11,13 @@ $reviews = get_posts($arguments);
 // $archive = get_post_type_archive_link('review');
 
 ?>
-<h1 class="text">Recente Reviews</h1>
+<div>
+    <h3 class="center">Welkom bij Wonder Reviews:</h3>
+    <p class="center">Een plaats waar je een wereld vol wonderen vind over alle pretparken waar wij de laatste tijd zijn geweest.</p>
+</div>
 
+<hr>
+<h1 class="text">Recente Reviews</h1>
 <div class="row">
     <div class="col-sm col-md col-lg col-xl col-xxl">
         <?php if($reviews): ?>
